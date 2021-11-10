@@ -96,8 +96,6 @@ jobs:
       - name: Run grcov
         id: coverage
         uses: actions-rs/grcov@v0.1
-        with:
-          config: ./.github/action-rs/grcov.yml
 
       - name: Coveralls upload
         uses: coverallsapp/github-action@master
